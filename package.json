@@ -1,0 +1,42 @@
+{
+  "name": "suboot.io-api",
+  "version": "0.0.1",
+  "description": "data source api for suboot.io",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ./dev.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeAlexMartinez/suboot.io-api.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "postgres"
+  ],
+  "author": "Michael Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikeAlexMartinez/suboot.io-api/issues"
+  },
+  "homepage": "https://github.com/MikeAlexMartinez/suboot.io-api#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "decamelize": "^2.0.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-winston": "^2.5.0",
+    "helmet": "^3.12.0",
+    "moment": "^2.21.0",
+    "pg": "^7.4.1",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.37.3",
+    "winston": "^2.4.1"
+  }
+}
