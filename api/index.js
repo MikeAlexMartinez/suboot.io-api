@@ -21,7 +21,6 @@ router.get('/tables', (req, res) => {
    * 
    * gameweek will be a number between 1 and 38
    */
-  console.log(req.query);
   const { filtered, focus, gameweek } = req.query;
   const where = {};
   const defaultSort = [
