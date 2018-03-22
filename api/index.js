@@ -49,8 +49,7 @@ router.get('/tables', (req, res) => {
     .then(items => {
       const tableEntries = items.map(v => v.dataValues);
       res.json({
-        status: 'okay',
-        filters: where,
+        status: true,
         data: tableEntries
       });
     })
