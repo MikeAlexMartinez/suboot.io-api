@@ -15,7 +15,7 @@ const { Teams } = require('../../db/Models');
 router.get('/shortnames', (req, res) => {
 
   Teams.findAll({
-      attributes: ['short_name']
+      attributes: ['short_name', 'name']
     })
     .then((results) => {
       res.json({
