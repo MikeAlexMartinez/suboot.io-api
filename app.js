@@ -22,7 +22,16 @@ const { fileDate } = require('./utils/dates');
 const app = express();
 
 // instantiate helmet headers and protections
-app.use(helmet());
+if (process.env.NODE_ENV === 'production') {
+  app.use(helmet());
+}
+
+app.use((req, res, next) => {
+  res.set({
+    'Access-Control-Allow-Origin': '*',
+  });
+  next();
+})
 
 // Cookie Parsing
 app.use(cookieParser(secret, {}));
